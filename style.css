@@ -62,3 +62,89 @@ main img {
   background-attachment: fixed;
   z-index: -1;
 }
+
+/* Searchbar*/
+#search {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 35rem;
+  height: 2.5rem;
+  background-color: lightgrey;
+  border-radius: 7px;
+}
+
+#searchbar {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  background-color: lightgrey;
+  flex-direction: row;
+  border-radius: 7px;
+  justify-content: space-between;
+}
+
+#searchInput {
+  padding-inline-start: 0.5rem;
+  margin-inline-end: -5.1rem;
+  display: block;
+  height: 95%;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: lightgrey;
+  border-radius: 7px;
+  box-shadow: 0 0 1px rgb(193, 217, 191), 0 0 0 2.5px rgba(56, 119, 130, 0.922);
+  transition: 0.3s ease;
+}
+
+#searchInput:focus {
+  background-color: rgb(223, 249, 255);
+  box-shadow: 0 0 1px rgb(193, 217, 191), 0 0 0 5px rgba(174, 222, 241, 0.922);
+  font-size: 1.05rem;
+}
+
+#search-field {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  font-size: 1rem;
+  text-align: left;
+}
+
+#search button {
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75em 0.8em;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#search button img {
+  width: 1rem;
+  height: 1rem;
+  filter: invert(0.7);
+}
+
+#search button:hover img {
+  filter: invert(var(--invert));
+}
+
+button#clear-field {
+  visibility: hidden;
+}
+
+button#clear-field img {
+  width: 0.9em;
+  height: 0.9em;
+}
+
+.dropdown-list {
+  width: 100%;
+}
