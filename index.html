@@ -22,6 +22,19 @@
     </header>
     <main>
         <img src="image.png" alt="">
+        <div id="search">
+                <form id="searchbar" action="https://duckduckgo.com/?search" autocomplete="off" oninput="suggest()">
+                    <span id="search-favicon"></span>
+                    <input autofocus id="searchInput" spellcheck="false" name="q" placeholder="Search on Duckduckgo...">
+                    <button id="clear-field" onclick="InputBoxReset('searchInput')" type="reset">
+                        <img src="asset/icons/close.svg" alt="Clear">
+                    </button>
+                    <button id="search-button" onclick="search()">
+                        <img src="asset/icons/loupe.svg" alt="Go">
+                    </button>
+                </form>
+                <div id="suggestions"></div>
+            </div>
     </main>
 </body>
 
